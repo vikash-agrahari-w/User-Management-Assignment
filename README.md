@@ -77,6 +77,10 @@ URI=mongodb+srv://username:password@cluster0.w5jfqek.mongodb.net/DB_NAME
 Basic WFlaOlh5ekAxMjM0
 
 ```
+- Create a directory to store generated PDFs
+```bash
+mkdir generatedPdfs
+```
 - Start Backend Server:
 ```bash
 npm run dev
