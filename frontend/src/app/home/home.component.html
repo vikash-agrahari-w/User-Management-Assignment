@@ -1,0 +1,23 @@
+<div class="main">
+    <div class="home custom-card">
+      <div class="title">Welcome to the User Management Dashboard!</div>
+      <div class="subtitle">Effortlessly manage user data and generate detailed PDF reports.
+    </div>
+      
+    </div>
+  
+    <div class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1em;">
+      <ng-container *ngFor="let item of items">
+        <div class="item custom-card">
+          <a routerLink="{{ item.routeLink }}" routerLinkActive="router-link-active" >
+            <img src="{{ item.image }}" alt="{{ item.title }}" class="box-image">
+          </a>
+          <div class="card-content">
+            <h3 class="h3">{{ item.title }}</h3>
+            <p class="p">{{ item.description }}</p>
+          </div>/* Generic selector */
+        </div>
+      </ng-container>
+    </div>
+</div>
+

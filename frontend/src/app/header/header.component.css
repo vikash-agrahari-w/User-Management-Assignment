@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 2; 
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #050505;
+}
+
+.header .logo {
+  max-height: 40px;
+  margin-left: 50px;
+}
+
+.header .title-group {
+  padding-left: 80px;
+}
+
+.header .title-group i {
+  padding-right: 5px;
+  margin-left: 25px;
+}
+
+/* Adjust content margin to accommodate header */
+.content {
+  padding-top: 64px; /* Adjust according to the height of the header */
+}

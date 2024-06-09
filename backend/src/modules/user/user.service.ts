@@ -28,7 +28,7 @@ export class UserService {
 
   async updateUserDetails(updateUserDto: UpdateUserDto, userId: number) {
     try {
-
+      console.log(updateUserDto);
       const userData: User =  updateUserDto?.phone ? await this.userEntity.getUserByPhone(updateUserDto?.phone) : false;
       
       if(userData && userData.id != userId){
@@ -72,7 +72,7 @@ export class UserService {
     try {
 
       const userList: User = await this.userEntity.getUserById(userId);
-
+console.log(userList);
       return [RESPONSE_DATA.SUCCESS, userList];
     } catch (error) {
       console.log('Error in getUserDetails:---------->', error);

@@ -22,9 +22,9 @@ This project is a full-stack user management application built with Angular.js f
 git clone https://github.com/vikash-agrahari-w/User-Management-Assignment
 ```
 ### Frontend Setup
-- Node version:  v16.20.2
-- Angular CLI: 9.1.0
-- Npm version: 8.19.4
+- Node version:  v20.14.0
+- Npm version: 10.7.0
+- Angular CLI: 18.0.2
 - Open integrated terminal for frontend directory.
 ``` bash
 cd frontend
@@ -37,12 +37,12 @@ npm install
 - Start Frontend Project:
 
 ```bash
-ng serve
+npm start
 ```
 ### Backend Setup
-- Node version:  v18.20.0
+- Node version:  v20.14.0
 - Nest version: 10.3.2
-- Npm version: 10.5.0
+- Npm version: 10.7.0
 - Open integrated terminal for backend directory.
 ``` bash
 cd backend
@@ -55,12 +55,8 @@ npm install
 
 - Environment Setup
 
-- Create bin folder in backend root directory
-
-```bash
-mkdir bin
-```
-- Create a file named: **_.env.dev_**
+- Create a file named: **_.env.dev_** inside **_bin_** folder.
+- A sample env is already in bin.
 
 ```bash
 
@@ -76,10 +72,6 @@ URI=mongodb+srv://username:password@cluster0.w5jfqek.mongodb.net/DB_NAME
 
 Basic WFlaOlh5ekAxMjM0
 
-```
-- Create a directory to store generated PDFs
-```bash
-mkdir generatedPdfs
 ```
 - Start Backend Server:
 ```bash

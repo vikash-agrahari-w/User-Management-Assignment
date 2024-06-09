@@ -1,0 +1,94 @@
+.card {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 500px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+  font-size: 220%;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.button-group {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.error-message {
+  display: flex;
+  justify-content: left;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.btn.denger {
+  background-color: #ff0000;
+  color: white;
+}
+
+.btn.denger:hover {
+  background-color: #943831;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.cancel {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn.cancel:hover {
+  background-color: #f0f0f0;
+}

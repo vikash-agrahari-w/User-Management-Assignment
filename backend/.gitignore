@@ -1,0 +1,10 @@
+# compiled output
+dist/
+
+#node packages
+node_modules/
+
+#logs
+logs/
+
+package-lock.json
