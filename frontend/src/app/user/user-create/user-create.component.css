@@ -22,7 +22,7 @@ h1 {
 }
 
 .form-group {
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -33,18 +33,12 @@ label {
   font-weight: bold;
 }
 
-.error-message {
-  display: flex;
-  justify-content: left;
-}
-
 input {
   width: 100%;
   padding: 5px 0;
   border: none;
   border-bottom: 1px solid #ccc;
   outline: none;
-  margin-bottom: 1px;
 }
 
 input::placeholder {
@@ -54,15 +48,14 @@ input::placeholder {
 .error-message {
   color: red;
   font-size: 14px;
+  display: flex;
+  justify-content: left;
 }
 
 .button-group {
-  position: absolute;
-  bottom: 150px;
-  left: 55%;
-  transform: translateX(-50%);
+  margin-top: 90px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .btn {
@@ -71,7 +64,7 @@ input::placeholder {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-  margin: 0 60px;
+  margin: 0 10px;
 }
 
 .btn.primary {

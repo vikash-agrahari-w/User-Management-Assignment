@@ -5,10 +5,11 @@
   top: 0; 
   width: 100%; 
   z-index: 2; 
-  margin-top: 15px;
+  margin-top: 0px;
   margin-left: 20px;
   font-size: 30px;
   font-weight: bold;
+  background-color: white;
 }
 
 .header a {
@@ -32,7 +33,6 @@
   margin-left: 25px;
 }
 
-/* Adjust content margin to accommodate header */
 .content {
-  padding-top: 64px; /* Adjust according to the height of the header */
+  padding-top: 74px; 
 }

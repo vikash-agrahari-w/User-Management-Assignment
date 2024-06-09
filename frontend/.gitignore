@@ -1,2 +1,9 @@
 .angular/
 .vscode/
+# compiled output
+dist/
+
+#node packages
+node_modules/
+
+package-lock.json
