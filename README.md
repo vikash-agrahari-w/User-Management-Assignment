@@ -55,23 +55,12 @@ npm install
 
 - Environment Setup
 
-- Create a file named: **_.env.dev_** inside **_bin_** folder.
 - A sample env is already in bin.
+- Change mongoDb database url with your string
 
 ```bash
-
-#Base configuration
-PORT=8001
-
 #MONGO DB
 URI=mongodb+srv://username:password@cluster0.w5jfqek.mongodb.net/DB_NAME
-
-#Replace above URI with your Mongodb Database url 
-
-#Basic Key:
-
-Basic WFlaOlh5ekAxMjM0
-
 ```
 - Start Backend Server:
 ```bash
