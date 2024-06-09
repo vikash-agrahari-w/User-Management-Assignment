@@ -13,10 +13,6 @@ export class UserService {
 
   async createUser(createUserDto: CreateUserDto) {
     try {
-      const userData: User = await this.userEntity.getUserByPhone(createUserDto.phone);
-      if(userData){
-        return [RESPONSE_DATA.USER_ALREADY_EXIST, {}];
-      }
       await this.userEntity.create(createUserDto);
 
       return [RESPONSE_DATA.SUCCESS, {}];
@@ -28,11 +24,11 @@ export class UserService {
 
   async updateUserDetails(updateUserDto: UpdateUserDto, userId: number) {
     try {
-      console.log(updateUserDto);
-      const userData: User =  updateUserDto?.phone ? await this.userEntity.getUserByPhone(updateUserDto?.phone) : false;
+
+      const userData: User =   await this.userEntity.getUserById(userId) ;
       
-      if(userData && userData.id != userId){
-        return [RESPONSE_DATA.USER_ALREADY_EXIST, {}];
+      if(!userData){
+        return [RESPONSE_DATA.USER_NOT_EXIST, {}];
       }
 
       await this.userEntity.updateUserById(userId,updateUserDto);
@@ -72,7 +68,7 @@ export class UserService {
     try {
 
       const userList: User = await this.userEntity.getUserById(userId);
-console.log(userList);
+
       return [RESPONSE_DATA.SUCCESS, userList];
     } catch (error) {
       console.log('Error in getUserDetails:---------->', error);

@@ -37,7 +37,7 @@ npm install
 - Start Frontend Project:
 
 ```bash
-npm start
+ng serve
 ```
 ### Backend Setup
 - Node version:  v20.14.0

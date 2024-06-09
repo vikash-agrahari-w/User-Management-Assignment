@@ -40,8 +40,4 @@ export class UserEntity extends Dao {
   async getUserById(id: number) {
     return await this.findOne({ id }, { createdAt: 0, updatedAt: 0, _id: 0 });
   }
-
-  async getUserByPhone(phone: string) {
-    return await this.findOne({ phone });
-  }
 }

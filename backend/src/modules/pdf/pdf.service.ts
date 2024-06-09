@@ -101,7 +101,7 @@ export class PdfService {
     }
   }
 
-  async retrievePdf() {
+  async previewPdf() {
     try {
       const pdfPath = path.join(
         __dirname,
@@ -120,7 +120,7 @@ export class PdfService {
         { contentType: 'application/pdf', response: bufferData },
       ];
     } catch (error) {
-      console.log('Error in retrievePdf:---------->', error);
+      console.log('Error in previewPdf:---------->', error);
       return [RESPONSE_DATA.ERROR, {}];
     }
   }

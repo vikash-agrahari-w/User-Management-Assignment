@@ -10,7 +10,6 @@ export const RESPONSE_MSG = {
   ERROR: 'Something went wrong.',
   USER_NOT_EXIST: 'User not exists.',
   INVALID_AUTHORIZATION_TOKEN: 'Invalid authorization token.',
-  USER_ALREADY_EXIST: 'Phone number already associated with an account.',
   DATA_NOT_FOUND: 'No user data found.',
   PDF_NOT_FOUND: 'PDF not found.',
 };
@@ -24,10 +23,6 @@ export const RESPONSE_DATA = {
     statusCode: HttpStatus.BAD_REQUEST,
     message: RESPONSE_MSG.ERROR,
   },
-  USER_ALREADY_EXIST: {
-    statusCode: HttpStatus.BAD_REQUEST,
-    message: RESPONSE_MSG.USER_ALREADY_EXIST,
-  },
   DATA_NOT_FOUND: {
     statusCode: HttpStatus.BAD_REQUEST,
     message: RESPONSE_MSG.DATA_NOT_FOUND,
@@ -35,5 +30,9 @@ export const RESPONSE_DATA = {
   PDF_NOT_FOUND: {
     statusCode: HttpStatus.BAD_REQUEST,
     message: RESPONSE_MSG.PDF_NOT_FOUND,
+  },
+  USER_NOT_EXIST: {
+    statusCode: HttpStatus.BAD_REQUEST,
+    message: RESPONSE_MSG.USER_NOT_EXIST,
   },
 };

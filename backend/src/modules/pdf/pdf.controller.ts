@@ -28,15 +28,15 @@ export class PdfController {
     }
   }
 
-  @Get('/retrieve')
-  @ApiOperation({ summary: 'api to retrieve user data PDF' })
+  @Get('/preview')
+  @ApiOperation({ summary: 'api to preview user data PDF' })
   @ApiBasicAuth()
   @UseGuards(AuthGuard('basic'))
-  async PdfRetrival(
+  async PdfPreview(
     @Res() response: Response,
   ) {
     try {
-      const [status, result] = await this.pdfService.retrievePdf();
+      const [status, result] = await this.pdfService.previewPdf();
       return this.httpResponse.sendResponse(response, status, result);
     } catch (error) {
       throw error;
